@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Belajar Clear untuk Float</title>
     <style>
-        p {
-            background: url(img/logo.png);
+        .container {
+            width: 1200px;
+            margin: auto;
+            padding: 5px;
+            border-bottom: 1px solid black;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 5px;
+        }
+
+        .clear {
+            clear: left;
+        }
+
+        .artikel {
+            margin: 50px;
+        }
+
+        .artikel p h3{
+            line-height: 0em;
         }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod architecto hic deserunt laudantium iusto nemo dignissimos. Deserunt magni doloremque quae earum. Quasi veniam totam natus explicabo, necessitatibus molestiae magnam voluptatem.</p>
+    <div class="container">
+        <img src="img/putih.png" alt="foto">
+        <div class="artikel">
+        <h3>Responsive Pemrograman Web Clinet</h3>
+        <p>NIM : 1855201092</p>
+        <p>Nama Mahasiswa : Sahrul Rojab</p>
+        </div>
+        <div class="clear"></div>
+    </div>
 </body>
 </html>
